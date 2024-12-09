@@ -2,6 +2,8 @@ name: Action workflow
 run-name: Action run - ${{ inputs.environment }} 
 
 on:
+  release:
+    types: [published]
   workflow_dispatch:
     inputs:
       environment:
